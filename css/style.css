@@ -1291,6 +1291,7 @@
 
     .textarea {
         padding-top: 18px;
+        max-height: 400px;
     }
 
     .form-btn:hover {
