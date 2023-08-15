@@ -246,19 +246,19 @@
     color: #ffffff;
 }
 
-.first {
+.trend-first {
     background-image: url("../img/trend1.jpg");
 }
 
-.second {
+.trend-second {
     background-image: url("../img/trend2.jpg");
 }
 
-.third {
+.trend-third {
     background-image: url("../img/trend3.jpg");
 }
 
-.fourth {
+.trend-fourth {
     background-image: url("../img/trend4.jpg");
 }
 
