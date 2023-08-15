@@ -140,7 +140,8 @@
     height: 4px;
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
 
     border-radius: 5px;
     background-color: #ffffff;
@@ -333,24 +334,12 @@
     opacity: 0.4;
 }
 
-.new-posts .aside-header::after {
-    margin-bottom: 29px;
-}
-
-.categories .aside-header::after {
-    margin-bottom: 15px;
-}
-
-.side-bar>section {
-    margin-bottom: 38px;
-}
-
-.side-bar>section:last-child {
-    margin-bottom: 46px;
-}
-
-.side-bar .new-posts {
+.new-posts {
     margin-bottom: 60px;
+}
+
+.posts-header::after {
+    margin-bottom: 29px;
 }
 
 .new-post-image {
@@ -373,6 +362,10 @@
 .new-post-header {
     font-size: 14px;
     line-height: 18px;
+}
+
+.search {
+    margin-bottom: 38px;
 }
 
 .search-form {
@@ -415,6 +408,10 @@
     background-size: 18px;
 }
 
+.subscripe {
+    margin-bottom: 38px;
+}
+
 
 .subscripe-button {
     width: 100%;
@@ -428,6 +425,10 @@
 
     background-color: #b59f5b;
     border: none;
+}
+
+.tags {
+    margin-bottom: 38px;
 }
 
 .tags-list {
@@ -450,6 +451,14 @@
     text-decoration: none;
     border: 3px solid #eee;
 
+}
+
+.categories {
+    margin-bottom: 46px;
+}
+
+.categories-header::after {
+    margin-bottom: 15px;
 }
 
 .category-list {
@@ -597,6 +606,7 @@
 .socials {
     display: flex;
     list-style-type: none;
+    gap: 0 27px;
 }
 
 .social-link {
@@ -607,10 +617,6 @@
     text-decoration: none;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.social-items:nth-child(n + 2) {
-    margin-left: 27px;
 }
 
 .social-link-text {
@@ -700,10 +706,6 @@
     margin-bottom: 32px;
 }
 
-.form-content>div:last-child {
-    margin-bottom: 24px;
-}
-
 .form-hint {
     display: block;
     margin-bottom: 8px;
@@ -748,8 +750,12 @@
 .textarea {
     min-height: 130px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     resize: vertical;
+}
+
+.last-row {
+    margin-bottom: 24px;
 }
 
 .form-btn {
@@ -885,7 +891,7 @@
         width: 272px;
     }
 
-    .side-bar>section {
+    .new-posts {
         margin-bottom: 56px;
     }
 
@@ -893,8 +899,28 @@
         font-size: 14px;
     }
 
+    .search {
+        margin-bottom: 60px;
+    }
+
     .field {
         font-size: 13px;
+    }
+
+    .subscripe {
+        margin-bottom: 56px;
+    }
+
+    .tags {
+        margin-bottom: 56px;
+    }
+
+    .categories {
+        margin-bottom: 56px;
+    }
+
+    .products {
+        margin-bottom: 26px;
     }
 
     .products-header {
@@ -918,7 +944,7 @@
         flex-grow: 2;
     }
 
-    .products:last-child {
+    .last-product {
         margin-bottom: 28px;
     }
 
@@ -992,6 +1018,7 @@
     .menu-list {
         display: flex;
         list-style-type: none;
+        gap: 0 35px;
     }
 
     .menu-link {
@@ -1003,10 +1030,6 @@
 
     .menu-link:hover {
         text-decoration: underline;
-    }
-
-    .menu-list-item:nth-child(n + 2) {
-        margin-left: 35px;
     }
 
     .header-title {
@@ -1071,15 +1094,15 @@
         width: 272px;
     }
 
+    .post-list {
+        margin-bottom: 4px;
+    }
+
     .post {
         display: flex;
         width: 778px;
         margin-bottom: 41px;
         border: none;
-    }
-
-    .post:last-child {
-        margin-bottom: 45px;
     }
 
     .post-picture {
@@ -1111,16 +1134,11 @@
         margin: 32px 0 44px;
     }
 
-
     .post-text {
         padding-right: 4px;
         margin-bottom: 14px;
         font-size: 15px;
         line-height: 21px;
-    }
-
-    .side-bar>section {
-        margin-bottom: 60px;
     }
 
     .aside-header {
@@ -1132,7 +1150,11 @@
         margin: 16px auto 26px;
     }
 
-    .new-post .post-title-link {
+    .new-posts {
+        margin-bottom: 60px;
+    }
+
+    .new-post-link {
         font-size: 14px;
     }
 
@@ -1140,8 +1162,16 @@
         width: 183px;
     }
 
+    .search {
+        margin-bottom: 66px;
+    }
+
     .field {
         font-size: 13px;
+    }
+
+    .subscripe {
+        margin-bottom: 60px;
     }
 
     .search-button:hover {
@@ -1152,6 +1182,14 @@
     .subscripe-button:hover {
         cursor: pointer;
         background-color: #323232;
+    }
+
+    .tags {
+        margin-bottom: 60px;
+    }
+
+    .categories-header::after {
+        margin-bottom: 13px;
     }
 
     .category-link:hover {
@@ -1181,7 +1219,6 @@
         display: flex;
         flex-direction: column;
         width: calc(100% / 3 - 65px * 2 / 3);
-
     }
 
     .product-description {
